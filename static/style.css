@@ -1,0 +1,171 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #007bff; /* 파랑 배경색 */
+}
+
+.menu-bar {
+    background-color: white; /* 흰색 배경 */
+    border: 2px solid #007bff; /* 파랑색 네모 테두리 */
+    padding: 10px;
+    width: 100%; /* 화면 전체 너비로 설정 */
+    position: fixed; /* 화면 상단에 고정 */
+    top: 0; /* 화면의 맨 위에 위치 */
+    z-index: 1000; /* 다른 요소들보다 위에 표시 */
+    box-sizing: border-box; /* border를 포함한 크기 계산 */
+}
+
+.menu-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.menu-bar ul li {
+    display: inline;
+    margin-right: 20px; /* 각 메뉴 항목 사이의 간격 */
+}
+
+.menu-bar ul li a {
+    text-decoration: none;
+    color: black; /* 메뉴 항목 텍스트 색상 */
+    padding: 10px;
+}
+
+.menu-bar ul li a:hover {
+    background-color: #f0f0f0; /* 메뉴 항목에 마우스를 올렸을 때의 배경색 */
+}
+
+.container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    max-width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px; /* 메뉴바와 겹치지 않도록 여백 추가 */
+}
+
+.chat-box {
+    background-color: #f5f5f5; /* 연회색 배경 */
+    border: 2px solid #ccc; /* 회색 테두리 */
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    max-width: 100%;
+    width: 100%;
+    min-height: 200px;
+    overflow-y: auto;
+}
+
+.message {
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    max-width: 95%;
+    margin: auto;
+}
+
+.user-message {
+    background-color: #dcf8c6; /* 연두색 배경 */
+    align-self: flex-end;
+}
+
+.bot-message {
+    background-color: #ececec; /* 연회색 배경 */
+    align-self: flex-start;
+    width: 100%;
+    white-space: pre-wrap; 
+    word-wrap: break-word; 
+    overflow-x: auto; 
+    padding: 10px; 
+    margin-bottom: 10px; 
+    border-radius: 5px; 
+}
+
+.bot-message::-webkit-scrollbar {
+    height: 8px; 
+}
+
+.bot-message::-webkit-scrollbar-track {
+    background: transparent; 
+}
+
+.bot-message::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 4px; 
+}
+
+
+.bot-message::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+.bot-message {
+    scrollbar-width: thin; 
+    scrollbar-color: #888 transparent; 
+}
+
+.input-container {
+    display: flex;
+    width: 100%;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #007bff; /* 파랑색 */
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3; /* 진한 파랑색 */
+}
+
+
+
+.file-upload-container {
+    position: relative;
+    display: inline-block;
+}
+
+.file-upload {
+    width: 100%;
+    height: 40px;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+}
+
+#uploadBtn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: auto;
+    margin-bottom: 15px;
+}
+

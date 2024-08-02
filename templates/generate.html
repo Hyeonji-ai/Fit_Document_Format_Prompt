@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FICL Chatbot</title>
+    <link rel="stylesheet" href="static\style.css">
+</head>
+<body>
+    <div class="menu-bar">
+        <ul>
+            <li><a href="generate.html">문서 생성 및 포맷팅</a></li>
+            <li><a href="intergrate.html">이미지 및 그래프 생성</a></li>
+            <li><a href="email.html">이메일 문구 작성</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <div class="file-upload-container">
+            <input type="file" id="fileInput" class="file-upload">
+            <button id="uploadBtn">참고할 파일 업로드</button>
+        </div>
+        <div class="chat-box" id="chat-box"></div>
+        <div class="input-container">
+            <input type="text" id="user-input" placeholder="메시지를 입력하세요...">
+            <button onclick="sendMessage()">전송</button>
+        </div>
+    </div>
+    <script src="static\scripts_c1.js"></script>
+</body>
+</html>

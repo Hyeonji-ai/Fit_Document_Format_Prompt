@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FICL Chatbot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #007bff; /* 파랑 배경색 */
+            color: white;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            background-color: #0056b3; /* 진한 파랑색 */
+            color: white;
+            cursor: pointer;
+            font-size: 1.2em;
+        }
+
+        button:hover {
+            background-color: #00408a; /* 진한 파랑색 */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>FICL 말하는대로<br>프롬프톤</h1>
+        <button onclick="goToNextPage()">Start</button>
+    </div>
+
+    <script>
+        function goToNextPage() {
+            window.location.href = 'generate.html';
+        }
+    </script>
+</body>
+</html>
