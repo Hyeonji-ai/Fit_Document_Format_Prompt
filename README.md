@@ -5,9 +5,15 @@ Fit_Document_Format_Prompt
 Installation
 ---------------
 
-This is a normal paragraph:
-    This is a code block.
-end code block.
+First install:
+
+    !pip3 install python-docx
+    !pip3 install --upgrade --user --quiet google-cloud-aiplatform
+    !pip install matplolib
+    !pip install flask
+    !pip install vertexai
+    
+end
 
 How to Use
 ---------------
